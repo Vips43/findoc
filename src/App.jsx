@@ -15,6 +15,7 @@ function App() {
     <div className="sticky top-0 z-999">
      <Navbar />
     </div>
+    
     <HeroSection />
     <FinaJourney />
     <MarketLive/>
