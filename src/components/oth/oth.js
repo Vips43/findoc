@@ -24,7 +24,10 @@ export const marketLive = [
 export const learnTab=["Knowledge Center", 'Blogs', 'Findoc Prime', 'Media', 'Events']
 
 export const videoSVG=[
-    {img:"/images/Why_video_new.svg", cls:"w-46 absolute bottom-0 left-20 translate-y-8 z-1 -rotate-15 hover:rotate-0 hover:-translate-y-10 hover:z-50 transition-all duration-500" },
-    {img:"/images/Faqs.svg", cls:"w-46 absolute bottom-0 left-50 translate-y-4 z-2 -rotate-15 hover:rotate-0 hover:-translate-y-10 transition-all duration-500 hover:z-50"},
-    {img:"/images/Techno_Derivatives_video_new.svg", cls:"w-46 absolute bottom-0 left-1/2 z-3 translate-y-14 rotate-15 hover:rotate-0 hover:-translate-y-10 transition-all duration-500 hover:z-50"},
+    {img:"/images/Why_video_new.svg", cls:"w-32 sm:w-40 lg:w-46 -rotate-12  translate-y-20 hover:rotate-0 hover:-translate-y-6 hover:z-50 transition-all duration-500" },
+    {img:"/images/Faqs.svg", cls:"w-32 sm:w-40 lg:w-46 -rotate-6 translate-y-16 hover:rotate-0 hover:-translate-y-6 hover:z-50 transition-all duration-500"},
+    {img:"/images/Techno_Derivatives_video_new.svg", cls:"w-32 sm:w-40 lg:w-46 rotate-12 translate-y-20 hover:rotate-0 hover:-translate-y-6 hover:z-50 transition-all duration-500"},
 ]
+
+const icon = ['xicon', "facebookIcon", "youtubeIcon"]
+

@@ -4,7 +4,7 @@ import { learnTab, videoSVG } from "./oth/oth";
 
 function Opportunity() {
  return (
-  <main className="w-full relative my-12 px-4 sm:px-6 lg:px-10 overflow-hidden">
+  <main className="w-full relative mt-12 px-4 sm:px-6 lg:px-10 overflow-hidden">
    <div className="relative grid grid-cols-1 md:grid-cols-3 items-center gap-6">
     <div className="relative md:col-span-1">
      <img
@@ -70,13 +70,21 @@ function Opportunity() {
     </div>
    </section>
 
-   <section className="relative w-full h-46 p-3 overflow-hidden">
-    {videoSVG.map((v) => (
-     <div className={`${v.cls}`}>
-      <img src={v.img} alt="" />
-     </div>
-    ))}
-   </section>
+   <section className="w-full overflow-hidden py-10">
+  <div className="relative max-w-5xl mx-auto">
+    <div className="flex items-end justify-center">
+      {videoSVG.map((v, i) => (
+        <img
+          key={i}
+          src={v.img}
+          alt=""
+          className={v.cls}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
   </main>
  );
 }
