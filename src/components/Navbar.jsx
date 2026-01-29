@@ -3,13 +3,15 @@ import logo from "/images/logo.svg";
 import Buttons from "./oth/Buttons";
 import { IoSearch } from "react-icons/io5";
 import MobileNav from "./oth/MobileNav";
+import { navItems } from "./oth/oth";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 function Navbar() {
  return (
   <>
-   <div className="max-h-30 w-full bg-white space-y-2 md:px-16 pt-4 drop-shadow-lg">
+   <div className="max-h-30 w-full bg-white space-y-2  pt-4 drop-shadow-lg">
     {/* upper div  */}
-    <div className="flex items-center gap-5 justify-around">
+    <div className="flex items-center md:px-16 gap-5 justify-around">
      <img src={logo} alt="" className="w-40" />
      <div className="hidden flex-1 md:flex items-center justify-between px-2 py-1 rounded border tracking-tight border-gray-400">
       <input
@@ -31,10 +33,12 @@ function Navbar() {
      </div>
     </div>
     {/* bottom div  */}
-    <div className="flex">
+    <div className="flex w-full bg-gray-100 md:px-16">
       <MobileNav />
-     <div className="max-w-xl hidden md:flex items-center">
-
+     <div className="w-full hidden lg:flex gap-2 justify-around items-center py-3">
+      {navItems.map(nav=>(
+        <span className="whitespace-nowrap font-normal text-gray-700 hover:text-primary-600 cursor-pointer flex items-center text-sm gap-1">{nav} <MdKeyboardArrowDown className="text-lg" /></span>
+      ))}
      </div>
     </div>
    </div>

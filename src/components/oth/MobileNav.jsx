@@ -20,8 +20,8 @@ function MobileNav() {
  //  console.log(navItems.map(nav=> nav))
  return (
   <>
-   <div className="w-full py-2 bg-gray-50">
-    <div className="max-w-xl mx-auto flex md:hidden justify-center items-center gap-2 w-full px-2">
+   <div className="lg:hidden block w-full py-2 bg-gray-50">
+    <div className="mx-auto flex lg:hidden justify-center items-center gap-2 w-full px-2">
      <div className="flex-1 flex items-center justify-between px-2 py-1 rounded border tracking-tight border-gray-400">
       <input
        type="search"
